@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSf-3d-mnt">
+                                <rect key="frame" x="0.0" y="47.000000000000014" width="390" height="253.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMu-gQ-aYm">
                                 <rect key="frame" x="162" y="396.33333333333331" width="66.333333333333314" height="33.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -57,12 +61,16 @@
                         <constraints>
                             <constraint firstItem="bMX-j5-gYP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Amm-F6-vtd"/>
                             <constraint firstItem="6cJ-4T-X1q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E07-ay-CHe"/>
+                            <constraint firstItem="FSf-3d-mnt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="3:10" id="EFr-Yy-oxA"/>
                             <constraint firstItem="6cJ-4T-X1q" firstAttribute="top" secondItem="FMu-gQ-aYm" secondAttribute="bottom" constant="40" id="Kiz-Lc-mmX"/>
                             <constraint firstItem="FMu-gQ-aYm" firstAttribute="top" secondItem="qlI-9t-cZC" secondAttribute="bottom" constant="40" id="MTP-3Q-O7I"/>
                             <constraint firstItem="bMX-j5-gYP" firstAttribute="top" secondItem="6cJ-4T-X1q" secondAttribute="bottom" constant="20" id="PSK-21-Tzb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FSf-3d-mnt" secondAttribute="trailing" id="PiH-bH-ijF"/>
+                            <constraint firstItem="FSf-3d-mnt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VQu-38-7fY"/>
                             <constraint firstItem="FMu-gQ-aYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lZX-Qv-ie6"/>
                             <constraint firstItem="qlI-9t-cZC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qfb-KI-Qca"/>
                             <constraint firstItem="6cJ-4T-X1q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xlY-Op-Zp2"/>
+                            <constraint firstItem="FSf-3d-mnt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yEa-aM-mL0"/>
                             <constraint firstItem="qlI-9t-cZC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="4:6" id="yXe-iN-a34"/>
                         </constraints>
                     </view>
@@ -82,6 +90,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
