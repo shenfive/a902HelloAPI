@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Kingfisher
 
 class ViewController: UIViewController {
 
@@ -32,15 +34,15 @@ class ViewController: UIViewController {
             }
             
             if let data = rowData as? Data{
-                
-                let str = String(decoding: data, as: UTF8.self)
-                print("===============")
-                print(str)
-                print("===============")
+                do{
+                    let json = try JSON(data:data)
+                    let imageString = json["results"][0]["picture"]["large"].stringValue
+                    self.headerImage.kf.setImage(with: URL(string: imageString))
+                    
+                }catch{
+                    
+                }
             }
-            
-            //我們要處理 JSON
-            
         }
     }
 
