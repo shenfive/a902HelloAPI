@@ -61,7 +61,7 @@ class ViewController: UIViewController {
                     let imageString = json["results"][0]["picture"]["large"].stringValue
                     self.headerImage.kf.setImage(with: URL(string: imageString))
                     
-                    let nameString = json["results"][0]["name"]["title"].stringValue + " " + json["results"][0]["name"]["first"].stringValue + " " + json["results"][0]["name"]["last"].stringValue
+                    let nameString = json["results"][0]["name"]["title"].stringValue + ". " + json["results"][0]["name"]["first"].stringValue + " " + json["results"][0]["name"]["last"].stringValue
                     self.nameLabel.text = nameString
                     
                     self.emailLabel.text = json["results"][0]["email"].stringValue
